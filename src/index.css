@@ -232,7 +232,7 @@ a {
   background-color: var(--dark-bg-color);
   box-shadow: 0.4rem 0.4rem var(--text-accent-color);
   color: var(--main-text-color);
-  font-size: 20;
+  font-size: 22px;
   font-weight: 700;
   transition-property: transform, box-shadow;
   transition-duration: 0.2s;
