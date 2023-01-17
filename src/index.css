@@ -232,13 +232,17 @@ a {
   background-color: var(--dark-bg-color);
   box-shadow: 0.4rem 0.4rem var(--text-accent-color);
   color: var(--main-text-color);
-  font-size: 22px;
   font-weight: 700;
   transition-property: transform, box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
   text-decoration: none;
+}
+
+.inline-section .card-button {
+  padding: 1rem 1rem;
+  font-size: 22px;
 }
 
 .card-button:hover {
