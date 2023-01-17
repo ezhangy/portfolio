@@ -17,7 +17,7 @@ const HappinessStory = () => {
     title: "Discovering Brown University's Happy Places",
     tldr: "I helped build the front-end for a Brown Daily Herald article about students' happy places at Brown. We combined the reporting with HTML/CSS and jQuery to create a beautiful and immersive visual essay.",
     tools: ["HTML/CSS", "jQuery"],
-    team: ["playful polar bear", "peaceful prairie dog"],
+    team: ["Neil Mehta", "Jed Fox"],
     timeline: "3 weeks"
   }
 
