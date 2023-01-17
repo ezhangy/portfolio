@@ -25,7 +25,7 @@ const RoomkastApp = () => {
     title: "Roomkast",
     tldr: "My teammates and I designed and prototyped the user interfaces and interactions for Roomkast, a roommate-matching app. After revising our designs based on feedback from a group critique, we conducted remote usability testing to evaluate our prototype and finalize our designs.",
     tools: ["Figma", "Balsamiq", "UserTesting.com"],
-    team: ["whimsical whale", "happy hedgehog", "funny fox"],
+    team: ["Amari Charles", "Kat Stephan", "Michael Xu"],
     timeline: "3 weeks"
   }
 
