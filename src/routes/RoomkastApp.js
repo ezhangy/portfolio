@@ -180,7 +180,7 @@ const RoomkastApp = () => {
         </div>
         <div className="project-section">
           <h2 class="small-section-title">reflection</h2>
-          <h2 class="big-section-title">Reflections</h2>
+          <h2 class="big-section-title">Takeaways</h2>
           <p>I had a ton of fun working with a team brainstorming and refining designs to create a solution for Roomkast. Here were my main takeaways:</p>
               <ol>
                   <li><b>Don't reinvent the wheel.</b> It might be fun to try to brainstorm designs that might bring about the next revolution in user interfaces, but especially as someone at the beginning of their UI/UX journey, leveraging tried-and-true conventions (such as the the bottom navbar) allows me to create the best experience for my users.</li>
