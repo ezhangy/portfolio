@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className={styles.navbar}>
             <div className={styles.test}>
-                <NavLink id={styles.name} to={`/`}>silly sloth</NavLink>
+                <NavLink id={styles.name} to={`/`}>lizzy zhang</NavLink>
             </div> 
             <div className={styles.links}>
                 <NavLink 
