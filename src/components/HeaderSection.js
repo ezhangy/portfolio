@@ -31,9 +31,14 @@ const HeaderSection = ({headerInfo}) => (
         </ul>
       </div>
     </div>
-    <div className="inline-section">
-            <a class="card-button" href={headerInfo.buttonLink}>{headerInfo.buttonLabel}</a>
-          </div>
+    {headerInfo.buttonLabel !== "" 
+      ? ( <div className="inline-section">
+            <a class="card-button" href={headerInfo.buttonLink}>
+              {headerInfo.buttonLabel}
+            </a>
+          </div>)
+      : (<></>)
+    } 
   </div>
 )
 
