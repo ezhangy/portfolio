@@ -8,7 +8,7 @@ import happinessImg from "../assets/project_thumbnails/happiness.png"
 import useScrollToTop from '../hooks/useScrollToTop';
 
 const Projects = () => {
-  const categories = ["design", "development"]
+  const categories = ["development", "design"]
   const project_data = [
     {
       id: 0,
@@ -49,7 +49,7 @@ const Projects = () => {
     <div className="page">
       <div className={styles["intro-text-container"]}>
         <h1 id={styles["hello-text"]}>hi there, i'm <b>lizzy zhang.</b></h1>
-        <p>I'm a <b>developer</b> and <b>designer</b> passionate about creating beautiful and effective tools.</p>
+        <p>I'm an aspiring <b>front-end developer</b> passionate about creating beautiful and effective tools.</p>
         <HashLink to="#projects-start" id={styles["see-work-wrapper"]} className="simple-button"> 
           works ↓
         </HashLink>
