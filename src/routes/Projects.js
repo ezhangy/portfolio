@@ -48,8 +48,8 @@ const Projects = () => {
   return (
     <div className="page">
       <div className={styles["intro-text-container"]}>
-        <h1 id={styles["hello-text"]}>hi there, i'm <b>sloth.</b></h1>
-        <p>I'm a <b>developer</b> and <b>designer</b> passionate about creating joyful tools and experiences.</p>
+        <h1 id={styles["hello-text"]}>hi there, i'm <b>lizzy zhang.</b></h1>
+        <p>I'm a <b>developer</b> and <b>designer</b> passionate about creating beautiful and effective tools.</p>
         <HashLink to="#projects-start" id={styles["see-work-wrapper"]} className="simple-button"> 
           works ↓
         </HashLink>
