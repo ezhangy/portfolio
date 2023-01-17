@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-    createHashRouter,
+    createBrowserRouter,
     RouterProvider,
     Route,
 } from "react-router-dom";
@@ -16,7 +16,7 @@ import AlbumApp from './routes/AlbumApp';
 import TroopRedesign from './routes/TroopRedesign';
 import ScrollToTop from './hooks/useScrollToTop';
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
