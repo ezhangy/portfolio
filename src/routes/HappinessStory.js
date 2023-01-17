@@ -18,7 +18,9 @@ const HappinessStory = () => {
     tldr: "I helped build the front-end for a Brown Daily Herald article about students' happy places at Brown. We combined the reporting with HTML/CSS and jQuery to create a beautiful and immersive visual essay.",
     tools: ["HTML/CSS", "jQuery"],
     team: ["Neil Mehta", "Jed Fox"],
-    timeline: "3 weeks"
+    timeline: "3 weeks",
+    buttonLabel: "View the finished article",
+    buttonLink: "https://projects.browndailyherald.com/2022/11/21/where-are-students-happiest/"
   }
 
   useScrollToTop()

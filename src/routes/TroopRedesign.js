@@ -21,7 +21,9 @@ const TroopRedesign = () => {
     tldr: "I redesigned a restaurant's landing page to be responsive and elegant on desktop, tablet, and mobile screens. To begin, I identified the usability problems with the original page. I then used lofi wireframes to ideate a new design that would address these problems. I used Figma to create hifi mockups of the website, and finally built the page using handcoded HTML/CSS!",
     tools: ["Figma", "Balsamiq"],
     team: ["just me!"],
-    timeline: "2 weeks"
+    timeline: "2 weeks",
+    buttonLabel: "View the final redesign",
+    buttonLink: "https://sillysloth888.github.io/cs130-responsive-redesign/"
   }
 
   useScrollToTop()

@@ -14,7 +14,9 @@ const AlbumApp = () => {
     tldr: "I created a React app that allows you to sort and filter a list of albums using data from Spotify. When you've found an album you would like to listen to, you can save it to your queue! I used Material UI (MUI) React to style the app.",
     tools: ["React", "MUI"],
     team: ["just me!"],
-    timeline: "2 weeks"
+    timeline: "2 weeks",
+    buttonLabel: "View the deployed app",
+    buttonLink: "https://sillysloth888.github.io/cs130-development/"
   }
 
   useScrollToTop()
