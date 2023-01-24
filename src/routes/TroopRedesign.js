@@ -19,10 +19,10 @@ const TroopRedesign = () => {
   const headerInfo = {
     title: "Troop PVD's Landing Page",
     tldr: "I redesigned a restaurant's landing page to be responsive and elegant on desktop, tablet, and mobile screens. To begin, I identified the usability problems with the original page. I then used lofi wireframes to ideate a new design that would address these problems. I used Figma to create hifi mockups of the website, and finally built the page using handcoded HTML/CSS!",
-    tools: ["Figma", "Balsamiq"],
+    tools: ["Figma", "Balsamiq", "HTML/CSS"],
     team: ["just me!"],
     timeline: "2 weeks",
-    buttonLabel: "View the final redesign",
+    buttonLabel: "View the final redesign!",
     buttonLink: "https://sillysloth888.github.io/cs130-responsive-redesign/"
   }
 
@@ -153,17 +153,17 @@ const TroopRedesign = () => {
           </div>
 
           <div className="inline-section">
-            <a class="card-button" href="https://sillysloth888.github.io/cs130-responsive-redesign/">View the deployed site here!</a>
+            <a class="card-button" href="https://sillysloth888.github.io/cs130-responsive-redesign/">View the final redesign!</a>
           </div>
          
         </div>
         <div className="project-section">
           <h2 class="small-section-title">reflection</h2>
-          <h2 class="big-section-title">Major Takeaways</h2>
+          <h2 class="big-section-title">Takeaways</h2>
           <p>Redesigning Troop's website taught me important lessons about design and web development.</p>
               <ol>
                   <li><b>Taking away info is as important as adding it.</b> Many of the improvements to the interface were based around removing, rather than adding additional information (for example, by distilling down the navbar options). I think the end result is a  sleeker interface that is much less confusing to use.</li>
-                  <li><b>There are many time sucks in interface design.</b> I spent too long on UI decisions that were ultimately inconsequential, such as font type or the specific shade of blue I should use for the background. In the end, many of these decisions only marginally impacted the aethestic impact of the site, and had no bearing whatsover on its usability. These choices can easily derail your project, so you have to ruthlessly prioritize.</li>
+                  <li><b>There are many time sucks in interface design.</b> I spent too long on UI decisions that were ultimately inconsequential, such as font type or the specific shade of blue I should use for the background. In the end, many of these decisions only marginally impacted the aethestic impact of the site, and had no bearing whatsover on its usability. These choices can easily derail your project, so I learned I had to ruthlessly prioritize.</li>
               </ol>
               <SeeMoreButton />
         </div>
