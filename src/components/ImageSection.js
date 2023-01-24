@@ -8,7 +8,7 @@ const ImageSection = ({ data, margin, width, separate, frame }) => {
       {separate 
         ? data.map((imgData) => (
               <div key={imgData.id} className={wrapperClasses} style={{width: width}}> 
-                <img src={imgData.path}/>
+                <img src={imgData.path} loading="lazy"/>
                 {(imgData.caption !== "") ? (<p className="caption">{imgData.caption}</p>) : (<></>)}
               </div>     
         ))
@@ -16,7 +16,7 @@ const ImageSection = ({ data, margin, width, separate, frame }) => {
         <div className={wrapperClasses} style={{width: width}}> 
           {data.map((imgData) => (
               <>
-                <img key={imgData.id} src={imgData.path}/>
+                <img key={imgData.id} src={imgData.path} loading="lazy"/>
                 {(imgData.caption !== "") ? (<p className="caption">{imgData.caption}</p>) : (<></>)}
               </>
           ))}
