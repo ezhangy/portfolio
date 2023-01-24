@@ -86,9 +86,9 @@ const HappinessStory = () => {
             <p><b>Tip:</b> To make the transition less jarring, add an offset so the transition occurs a little later, when the element has scrolled past the bottom fourth of the page or so.</p>
           </div>
 
-          <p>I was saddened to find out you can't transition between two images by altering the img element's src attribute. You swap the images, of course, but there's no way to put an transition between them, at least that I've found. If you want the new image to fade in, you have to 1) append a new img element within your desired div, 2) fade out the old img element, and 3) fade in the new img element. After the old image has faded, you should remove it from the HTML document so you're only ever dealing with two images at once</p>
+          <p>Sadly, you can't transition between two images by altering the img element's src attribute. You can swap the images, of course, but there's no way to put an transition between them, at least that I've found. If you want the new image to fade in, you have to 1) append a new img element within your desired div, 2) fade out the old img element, and 3) fade in the new img element. After the old image has faded, you should remove it from the HTML document so you're only ever dealing with two images at once.</p>
 
-          <p>It sounds pretty complicated—and it certainly was to figure out—but thankfully there are a lot of helpful jQuery methods which abstract away a lot of the process.</p>
+          <p>Thankfully, there are a lot of helpful jQuery methods which abstract away a lot of the process.</p>
 
           <ImageSection
             data={[{id: code2, path: code2, caption: "Fading out and removing an old image to fade in a new one." }]}
@@ -122,9 +122,9 @@ const HappinessStory = () => {
         <div className="project-section">
           <h2 class="small-section-title">reflection</h2>
           <h2 class="big-section-title">Takeaways</h2>
-          <p>This was one of the most fulfilling projects I've ever completed, I think in large part because it was actually published for the wider Brown community to read. It was an amazing feeling to open up the BDH website and the site I had helped create on the front page!</p>
+          <p>This was one of the most fulfilling projects I've ever completed, I think in large part because it was actually published for the wider Brown community to read. It was an amazing feeling to open up the BDH website and see the site I had helped create on the front page!</p>
               <ol>
-                  <li><b>Even simple interactions can create powerful storytelling.</b> Ultimately, the only interaction in the article comes from the amount you've scrolled. Yet even relatively simple dynamic elements like background and images transitions makes article so much more emotionally resonant than if it had been entirely static, at least in my opinion.</li>
+                  <li><b>Even simple interactions can create powerful storytelling.</b> Ultimately, the only interaction in the article comes from the amount you've scrolled. Yet even relatively simple dynamic elements like background and image transitions make the article so much more emotionally resonant than if it had been entirely static.</li>
                   <li><b>Don't underestimate simple Javascript libraries.</b> My instinct is often to immediately go to the most powerful framework to accomplish a task (i.e. React). However, due to the BDH's infrastructure, we could only use vanilla Javascript and small libraries that could be easily imported. But I never felt particularly limited by this constraint—if anything, I felt like it pushed me to be more creative in my implementation choices. </li>
               </ol>
               <SeeMoreButton />
