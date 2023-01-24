@@ -1,8 +1,9 @@
 import styles from "./ProjectBanner.module.css"
+import Image from "next/image"
 
 const ProjectBanner = ({ imgSrc }) => (
   <div className={styles["img-container"]}>
-    <img src={imgSrc}/>
+    <Image src={imgSrc}/>
   </div>
 )
 
