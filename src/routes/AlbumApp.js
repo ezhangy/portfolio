@@ -15,7 +15,7 @@ const AlbumApp = () => {
     tools: ["React", "MUI"],
     team: ["just me!"],
     timeline: "2 weeks",
-    buttonLabel: "View the deployed app",
+    buttonLabel: "View the deployed app!",
     buttonLink: "https://sillysloth888.github.io/cs130-development/"
   }
 
@@ -41,10 +41,6 @@ const AlbumApp = () => {
           
           <p>Using each album's unique <a href="https://community.spotify.com/t5/FAQs/What-s-a-Spotify-URI/ta-p/919201">Spotify URI</a>, I used the <a href="https://developer.spotify.com/console/get-several-albums/">Get Several Albums</a> endpoint of Spotify's Web API console to download a json with all of the album data. </p>.
 
-          <div className="text-block tip-block">
-            <p><b>Tip:</b> Spotify's Web API is a great tool play with because it allows you to extract data from the Spotify API without having to worry about how to make API calls in Javascript, or how to hide your public key.</p>
-          </div>
-
         </div>
         <div className="project-section">
           <h3 className="small-section-title">app architecture</h3>
@@ -57,31 +53,11 @@ const AlbumApp = () => {
             separate={true}
             frame={false}
           />
-          <ol>
-          <li>
-            <b>AlbumItem</b> is the album card in the aggregator, and displays the album cover, name, artists, number of tracks, and runtime. It also contains the button to add an item to the queue. In the App component, a map function is applied to a list of albums to create each AlbumItem.
-            </li>
-          <li>
-            <b>ControlBar</b> contains a dropdown menu for sorting, a range slider to filter by date, and a checkbox to include explicit content. The ControlBar component contains the DoubleRangeSlider component
-            </li>
-          <li>
-            <b>DoubleRangeSlider</b> contains the range slider used to filter by date. It was adapted from an example in the Material UI React documentation.
-            </li>
-          <li>
-            <b>Queue</b> contains the entire queue, including the title and total runtime elements, as well as the list of QueueItems which makes up the queue.
-            </li>
-          <li>
-            <b>QueueItem</b> displays an single album in the queue, showing the album's cover and name. It also contains a button that allows you to remove items from the queue. In the Queue component, a map function is applied to the queue state to create each QueueItem
-            </li>
-          </ol>
         </div>
         <div className="project-section">
             <h3 className="small-section-title">program logic</h3>
             <h2 className="big-section-title">Triggering State Changes</h2>
             <p>My app contains four states, which manage sorting, filtering, and adding/removing from the queue.</p>
-            <ul>
-            <li><b>queue</b> contains a list of albums which represent the queue. Clicking the "Add to Queue" button on an album card adds that album to the list. Clicking the minus button on an queue item removes that album from the list.</li>
-          </ul>
 
           <div className="inline-section rounded-section">
             <div className="img-wrapper">
@@ -90,16 +66,18 @@ const AlbumApp = () => {
           </div>
 
           <ul>
-            <li><b>checked </b>represents the state of the "Include Explicit" checkbox. Checking the "Include Explicit" box sets the state to true while unchecking the box sets the state to false</li>
-            <li><b>sort</b> represents the current sorting method used to display the albums. Selecting different options in the "Sort by" dropdown box changes the state to "newest", "oldest", and "popular" respectively. If no option has been selected, the state is ""</li>
-            <li><b>rangeValue</b> is a tuple that represents the lower and upper bound set by the Release Date slider. By dragging either end of the slider back or forth, the user changes the first integer in the tuple (the minimum) or the second integer in the tuple (the maximum).</li>
+            <li><b>queue</b> contains a list of albums which represent the queue. Clicking the "Add to Queue" button on an album card adds that album to the list. Clicking the minus button on an queue item removes that album from the list.</li>
           </ul>
-
           <div className="inline-section rounded-section">
             <div className="img-wrapper">
               <img src={filterGif} />
             </div>
           </div>
+          <ul>
+            <li><b>checked </b>represents the state of the "Include Explicit" checkbox. Checking the "Include Explicit" box sets the state to true while unchecking the box sets the state to false</li>
+            <li><b>sort</b> represents the current sorting method used to display the albums. Selecting different options in the "Sort by" dropdown box changes the state to "newest", "oldest", and "popular" respectively. If no option has been selected, the state is ""</li>
+            <li><b>rangeValue</b> is a tuple that represents the lower and upper bound set by the Release Date slider. By dragging either end of the slider back or forth, the user changes the first integer in the tuple (the minimum) or the second integer in the tuple (the maximum).</li>
+          </ul>
         </div>
 
         <div className="project-section">
@@ -119,7 +97,7 @@ const AlbumApp = () => {
               <li>Purple is used to accent elements on the site that can be interacted with, such as the buttons to add and remove items from the queue, the sliders, and the checkboxes when they are checked.</li>
             </ul>
           <div className="inline-section">
-            <a class="card-button" href="https://sillysloth888.github.io/cs130-development/">View my deployed app here!</a>
+            <a class="card-button" href="https://sillysloth888.github.io/cs130-development/">View the deployed app!</a>
           </div>
         </div>
         <div className="project-section">
@@ -127,8 +105,8 @@ const AlbumApp = () => {
           <h2 class="big-section-title">Takeaways</h2>
           <p>I think this app turned out both loking and feeling great. I think the fact that I could actually envision me and my friends making use of an app or site like this provided extra motivation to build it as well as I could. Here were my main takeaways:</p>
               <ol>
-                  <li><b>Make use of component libraries.</b> The MUI component library is great, both with regards to the documentation and the components themselves. I love custom styling my interface elements as much as anyone else, but using MUI in this project freed me up to dedicate my priary focus on the app architecture and program logic.</li>
-                  <li><b>You don't need to do everything at once!</b> I spend a lot of time trying to figure out how to extract data from the API directly in the React app, and never ended up being able to figure it out. Sometimes the smartest move is to shelve certain features to implement in future projects.</li>
+                  <li><b>Make use of component libraries.</b> The MUI component library is great, both with regards to the documentation and the components themselves. I love custom styling my interface elements as much as anyone else, but using MUI in this project freed me up to dedicate my primary focus on the app architecture and program logic.</li>
+                  <li><b>You don't need to do everything at once!</b> I spent a lot of time trying to figure out how to extract data from the API directly in the React app, and never ended up being able to figure it out. Sometimes the smartest move is to shelve certain features to implement in future projects.</li>
               </ol>
               <SeeMoreButton />
         </div>
