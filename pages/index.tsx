@@ -1,11 +1,9 @@
-import { HashLink } from "react-router-hash-link";
-import ProjectItem from "../../components/ProjectItem";
+import ProjectItem from "../components/ProjectItem";
 import styles from "./Projects.module.css";
-import iterativeImg from "../assets/project_thumbnails/roomkast.png";
-import albumImg from "../assets/project_thumbnails/album.png";
-import redesignImg from "../assets/project_thumbnails/redesign.png";
-import happinessImg from "../assets/project_thumbnails/happiness.png";
-import useScrollToTop from "../hooks/useScrollToTop";
+import iterativeImg from "../public/assets/project_thumbnails/roomkast.png";
+import albumImg from "../public/assets/project_thumbnails/album.png";
+import redesignImg from "../public/assets/project_thumbnails/redesign.png";
+import happinessImg from "../public/assets/project_thumbnails/happiness.png";
 
 const Projects = () => {
   const categories = ["development", "design"];
@@ -16,7 +14,7 @@ const Projects = () => {
       title: "Troop PVD's Landing Page",
       img: redesignImg,
       description: "Redesigning a restaurant's homepage.",
-      link: "site-redesign",
+      link: "projects/site-redesign",
     },
     {
       id: 1,
@@ -24,7 +22,7 @@ const Projects = () => {
       title: "Album Discovery App",
       img: albumImg,
       description: "A React app for aggregating albums.",
-      link: "album-app",
+      link: "projects/album-app",
     },
     {
       id: 2,
@@ -32,7 +30,7 @@ const Projects = () => {
       title: "Roomkast App",
       img: iterativeImg,
       description: "Prototyping a roommate matching app.",
-      link: "roomkast-app",
+      link: "projects/roomkast-app",
     },
     {
       id: 2,
@@ -40,11 +38,10 @@ const Projects = () => {
       title: "Happy Places",
       img: happinessImg,
       description: "A visual essay about Brown students' happy places.",
-      link: "happiness-story",
+      link: "projects/happiness-story",
     },
   ];
 
-  useScrollToTop();
   return (
     <div className="page">
       <div className={styles["intro-text-container"]}>
@@ -55,13 +52,7 @@ const Projects = () => {
           I'm an aspiring <b>front-end developer</b> passionate about creating
           beautiful and effective tools.
         </p>
-        <HashLink
-          to="#projects-start"
-          id={styles["see-work-wrapper"]}
-          className="simple-button"
-        >
-          works ↓
-        </HashLink>
+        works ↓
       </div>
 
       <div className={styles.projects}>
@@ -96,3 +87,9 @@ const Projects = () => {
 };
 
 export default Projects;
+
+export async function getStaticProps(contex: any) {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
