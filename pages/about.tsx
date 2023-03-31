@@ -21,7 +21,7 @@ const About = () => (
       <p>
         Currently, I get to make cool things as part of{" "}
         <a href="https://www.browndailyherald.com/">Brown Daily Herald's</a>{" "}
-        Data Desk. I also teach about ethics as part of{" "}
+        tech team. I also teach about ethics as part of{" "}
         <a href="http://ethics.cs.brown.edu/">
           Socially Responsible Computing @ Brown
         </a>

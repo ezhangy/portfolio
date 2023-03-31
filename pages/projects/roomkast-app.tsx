@@ -174,7 +174,7 @@ const RoomkastApp = () => {
             from the critique to revise our high-fidelity prototype.
           </p>
           <div className="carousel">
-            <Carousel autoFocus={true} showStatus={false}>
+            <Carousel autoFocus={true} showStatus={false} showThumbs={false}>
               {critiquePaths.map((img: StaticImageData) => (
                 <div className="img-wrapper">
                   <Image src={img} alt="" />

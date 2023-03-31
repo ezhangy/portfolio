@@ -7,9 +7,16 @@ interface ProjectItemProps {
   thumbnail: StaticImageData;
   descr: string;
   link: string;
+  tags: Array<string>;
 }
 
-const ProjectItem = ({ title, thumbnail, descr, link }: ProjectItemProps) => {
+const ProjectItem = ({
+  title,
+  thumbnail,
+  descr,
+  link,
+  tags,
+}: ProjectItemProps) => {
   return (
     <div className={`card-button ${styles.item}`}>
       <Link href={link}>
@@ -18,6 +25,11 @@ const ProjectItem = ({ title, thumbnail, descr, link }: ProjectItemProps) => {
         </div>
         <h2>{title}</h2>
         <p>{descr}</p>
+        <ul className={styles["project-tags"]}>
+          {tags.map((tagName: string) => (
+            <li>{tagName}</li>
+          ))}
+        </ul>
       </Link>
     </div>
   );

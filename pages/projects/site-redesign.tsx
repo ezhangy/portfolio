@@ -120,14 +120,6 @@ const TroopRedesign = () => {
             separate={true}
             frame={false}
           />
-          <div className="tip-block text-block">
-            <p>
-              <b>Tip:</b> Don't get attached to your wireframes! Embrace their
-              messiness, and discard them early and often as you iterate through
-              multiple designs. I spent way too much time crafting my initial
-              wireframes, only to totally change their layout later.
-            </p>
-          </div>
           <ImageSection
             data={[
               { id: tabletWf.src, img: tabletWf },
@@ -148,14 +140,6 @@ const TroopRedesign = () => {
             components, so that a future designer could pick up my redesign
             without wondering what a button that's moused over should look like.
           </p>
-          <div className="text-block tip-block">
-            <p>
-              <b>Tip:</b> I used{" "}
-              <a href="https://fontawesome.com/">Font Awesome</a> for all of my
-              icons, which offers a really great toolset of free icons you can
-              use in both Figma and HTML.
-            </p>
-          </div>
           <ImageSection
             data={[
               {
@@ -191,16 +175,6 @@ const TroopRedesign = () => {
             separate={false}
             frame={false}
           />
-          <div className="text-block tip-block">
-            <p>
-              <b>Tip:</b> I personally try to create a Figma Component as soon
-              as I use a design element more than once. This is because there's
-              no easy way to convert a group into a Component instance. If you
-              only use the Component a couple times, you only spent a little
-              extra effort—whereas copying even a slight design change manually
-              across multiple elements can be grueling.
-            </p>
-          </div>
           <div className="inline-section img-and-text">
             <div className="text-wrapper-left">
               <h2 className="small-section-title">tablet mockup</h2>
@@ -233,7 +207,7 @@ const TroopRedesign = () => {
               </p>
             </div>
             <div className="img-wrapper img-wrapper-right">
-              <img src={mobileHifi} />
+              <Image src={mobileHifi} alt="high fidelity mobile prototype" />
             </div>
           </div>
         </div>

@@ -53,6 +53,7 @@ button {
   --light-bg-color: #f8eee6;
   --main-accent-color:#f97101;
   --text-accent-color:#fa801c;
+  --dark-text-accent-color:#d76b14;
   --link-color: #e47216;
   --main-text-color: #292929;
 }
@@ -107,20 +108,20 @@ a {
 .project-content {
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
+}
+
+.project-section {
+  display: flex;
   gap: 1rem;
-}
-
-.project-section h2, .project-section h3, .project-section p {
-  margin-block-start: 1em;
-}
-
-.project-content p:first-of-type {
-  margin-block-start: 0.5rem;
+  flex-direction: column;
+  padding: 2rem 0;
 }
 
 .project-section > * {
-  padding: 2% 20%;
+  padding: 0 4rem;
 }
+
 
 .small-section-title {
   font-family: "Bitter", Georgia, 'Times New Roman', Times, serif;
@@ -163,7 +164,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 2% 0 0;
   max-width: 100%;
   padding: 2rem 4rem;
 }
@@ -194,8 +194,6 @@ a {
 }
 
 .img-and-text {
-  margin-left: -12%;
-  margin-right: -12%;
   gap: 1.5rem;
 }
 

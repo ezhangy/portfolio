@@ -4,46 +4,55 @@ import iterativeImg from "../public/assets/project_thumbnails/roomkast.png";
 import albumImg from "../public/assets/project_thumbnails/album.png";
 import redesignImg from "../public/assets/project_thumbnails/redesign.png";
 import happinessImg from "../public/assets/project_thumbnails/happiness.png";
+import { StaticImageData } from "next/image";
+
+interface ProjectItem {
+  id: number;
+  title: string;
+  img: StaticImageData;
+  descr: string;
+  link: string;
+  tags: Array<string>;
+}
 
 const Projects = () => {
-  const categories = ["development", "design"];
-  const project_data = [
+  const project_data: Array<ProjectItem> = [
     {
       id: 0,
-      category: "design",
       title: "Troop PVD's Landing Page",
       img: redesignImg,
-      description: "Redesigning a restaurant's homepage.",
+      descr: "Redesigning a restaurant's homepage.",
       link: "projects/site-redesign",
+      tags: ["UI/UX", "responsive design", "HTML/CSS"],
     },
     {
       id: 1,
-      category: "development",
       title: "Album Discovery App",
       img: albumImg,
-      description: "A React app for aggregating albums.",
+      descr: "A React app for aggregating albums.",
       link: "projects/album-app",
+      tags: ["React", "Material UI"],
     },
     {
       id: 2,
-      category: "design",
       title: "Roomkast App",
       img: iterativeImg,
-      description: "Prototyping a roommate matching app.",
+      descr: "Prototyping a roommate matching app.",
       link: "projects/roomkast-app",
+      tags: ["UI/UX", "Figma", "usability testing"],
     },
     {
       id: 2,
-      category: "development",
-      title: "Happy Places",
+      title: "Happy Places Visual Essay",
       img: happinessImg,
-      description: "A visual essay about Brown students' happy places.",
+      descr: "Brown students' happy places.",
       link: "projects/happiness-story",
+      tags: ["jQuery", "HTML/CSS", "Brown Daily Herald"],
     },
   ];
 
   return (
-    <div className="page">
+    <div id={styles["homepage"]}>
       <div className={styles["intro-text-container"]}>
         <h1 id={styles["hello-text"]}>
           hi there, i'm <b>lizzy zhang.</b>
@@ -52,35 +61,24 @@ const Projects = () => {
           I'm an aspiring <b>front-end developer</b> passionate about creating
           beautiful and effective tools.
         </p>
-        works ↓
+        <a id={styles["see-work-wrapper"]} href="#projects-start">
+          works ↓
+        </a>
       </div>
 
       <div className={styles.projects}>
-        {categories.map((category, index) => (
-          <div className="projectCategory" key={category}>
-            <h2
-              className={styles["category-title"]}
-              id={index === 0 ? "projects-start" : ""}
-            >
-              {category}
-            </h2>
-            <div className={styles["projects-list"]}>
-              {project_data
-                .filter((project) => {
-                  return category === project.category;
-                })
-                .map((project) => (
-                  <ProjectItem
-                    key={project.id}
-                    title={project.title}
-                    thumbnail={project.img}
-                    descr={project.description}
-                    link={project.link}
-                  />
-                ))}
-            </div>
-          </div>
-        ))}
+        <div id={styles["projects-start"]} className={styles["projects-list"]}>
+          {project_data.map((project: ProjectItem) => (
+            <ProjectItem
+              key={project.id}
+              title={project.title}
+              thumbnail={project.img}
+              descr={project.descr}
+              link={project.link}
+              tags={project.tags}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

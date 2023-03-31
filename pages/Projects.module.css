@@ -1,3 +1,10 @@
+#homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8rem;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -5,11 +12,11 @@
 }
 
 .projects-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  gap: 2rem;
+  display: grid;
+  height: 100%;
+  padding: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
 .project-category {
@@ -42,9 +49,29 @@
 }
 
 #see-work-wrapper {
+  text-decoration: none;
   position: absolute;
+  color: var(--text-accent-color);
   font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  font-weight: bold;
   top: 80vh;
   margin: auto;
   align-self: center;
+}
+
+@media screen and (max-width: 65rem) {
+  #homepage {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .projects-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects {
+    padding: 0 2rem;
+  }
 }

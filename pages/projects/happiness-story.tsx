@@ -158,15 +158,6 @@ const HappinessStory = () => {
           separate={true}
           frame={false}
         />
-
-        <div className="text-block tip-block">
-          <p>
-            <b>Tip:</b> To make the transition less jarring, add an offset so
-            the transition occurs a little later, when the element has scrolled
-            past the bottom fourth of the page or so.
-          </p>
-        </div>
-
         <p>
           Sadly, you can't transition between two images by altering the img
           element's src attribute. You can swap the images, of course, but
