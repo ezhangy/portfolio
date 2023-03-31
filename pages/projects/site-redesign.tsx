@@ -148,7 +148,7 @@ const TroopRedesign = () => {
                 caption: "The visual design style guide for Troop's homepage.",
               },
             ]}
-            width={"100%"}
+            width={"80%"}
             separate={false}
             frame={false}
           />
@@ -171,7 +171,7 @@ const TroopRedesign = () => {
           </p>
           <ImageSection
             data={[{ id: desktopHifi.src, img: desktopHifi }]}
-            width={"100%"}
+            width={"80%"}
             separate={false}
             frame={false}
           />

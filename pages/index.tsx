@@ -61,13 +61,13 @@ const Projects = () => {
           I'm an aspiring <b>front-end developer</b> passionate about creating
           beautiful and effective tools.
         </p>
-        <a id={styles["see-work-wrapper"]} href="#projects-start">
+        <a id={styles["see-work-wrapper"]} href="#works">
           works ↓
         </a>
       </div>
 
       <div className={styles.projects}>
-        <div id={styles["projects-start"]} className={styles["projects-list"]}>
+        <div id="works" className={styles["projects-list"]}>
           {project_data.map((project: ProjectItem) => (
             <ProjectItem
               key={project.id}
