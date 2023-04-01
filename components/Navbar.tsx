@@ -17,7 +17,7 @@ const Navbar = () => {
           className={router.pathname === "/" ? styles["active"] : ""}
           href={`/`}
         >
-          works
+          home
         </Link>
         <Link
           className={router.pathname === "/about" ? styles["active"] : ""}
