@@ -12,7 +12,7 @@ const ProjectBanner = ({ img }: ProjectBannerProps) => (
       alt="banner image"
       priority={true}
       placeholder={"blur"}
-      quality={30}
+      quality={60}
     />
   </div>
 );
