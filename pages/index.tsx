@@ -92,9 +92,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-export async function getStaticProps(contex: any) {
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-}

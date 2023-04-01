@@ -311,9 +311,3 @@ const RoomkastApp = () => {
 };
 
 export default RoomkastApp;
-
-export async function getStaticProps(contex: any) {
-  return {
-    props: {}, // will be passed to the page component as props
-  };
-}
