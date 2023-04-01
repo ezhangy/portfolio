@@ -7,7 +7,13 @@ interface ProjectBannerProps {
 
 const ProjectBanner = ({ img }: ProjectBannerProps) => (
   <div className={styles["img-container"]}>
-    <Image src={img} alt="banner image" priority={true} placeholder={"blur"} />
+    <Image
+      src={img}
+      alt="banner image"
+      priority={true}
+      placeholder={"blur"}
+      quality={30}
+    />
   </div>
 );
 
