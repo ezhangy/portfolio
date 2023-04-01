@@ -1,4 +1,3 @@
-import heroImage from "../../public/assets/project_thumbnails/happiness_long.png";
 import ProjectBanner from "../../components/ProjectBanner";
 import HeaderSection, { HeaderInfo } from "../../components/HeaderSection";
 import sketch from "../../public/assets/happiness/ideation.jpg";
@@ -30,7 +29,7 @@ const HappinessStory = () => {
         <title>{headerInfo.title} | lizzy zhang</title>
       </Head>
       <main>
-        <ProjectBanner img={heroImage} />
+        <ProjectBanner img="/assets/project_thumbnails/happiness_long.png" />
         <div className="project-content">
           <HeaderSection headerInfo={headerInfo} />
           <div className="project-section">

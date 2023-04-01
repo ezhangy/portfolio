@@ -1,5 +1,4 @@
 import ProjectBanner from "../../components/ProjectBanner";
-import bannerImg from "../../public/assets/project_thumbnails/album_long.png";
 import HeaderSection from "../../components/HeaderSection";
 import componentImg from "../../public/assets/album/components.png";
 import ImageSection from "../../components/ImageSection";
@@ -26,7 +25,7 @@ const AlbumApp = () => {
         <title>{headerInfo.title} | lizzy zhang</title>
       </Head>
       <main>
-        <ProjectBanner img={bannerImg} />
+        <ProjectBanner img="/assets/project_thumbnails/album_long.png" />
         <div className="project-content">
           <HeaderSection headerInfo={headerInfo} />
           <div className="project-section">

@@ -2,7 +2,6 @@ import ProjectBanner from "../../components/ProjectBanner";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import HeaderSection from "../../components/HeaderSection";
-import roomkastImg from "../../public/assets/project_thumbnails/roomkast_long.png";
 import sketches1 from "../../public/assets/roomkast/sketches/sketches_1.svg";
 import sketches2 from "../../public/assets/roomkast/sketches/sketches_2.svg";
 import sketches3 from "../../public/assets/roomkast/sketches/sketches_3.svg";
@@ -80,7 +79,7 @@ const RoomkastApp = () => {
         <title>{headerInfo.title} | lizzy zhang</title>
       </Head>
       <main>
-        <ProjectBanner img={roomkastImg} />
+        <ProjectBanner img={"/assets/project_thumbnails/roomkast_long.png"} />
         <div className="project-content">
           <HeaderSection headerInfo={headerInfo} />
           <div className="project-section">
