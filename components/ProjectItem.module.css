@@ -3,7 +3,7 @@
   flex: 1 2;
   min-width: 30rem;
   max-width: 38rem;
-  min-height: 100%;
+  height: fit-content;
   padding: 1.5rem 1.5rem;
   background-color: var(--dark-bg-color);
   box-shadow: 0.4rem 0.4rem var(--text-accent-color);
