@@ -10,13 +10,13 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 65rem) {
+@media screen and (max-width: 60rem) {
   .img-container {
-    height: 35vh;
+    height: 50vh;
   }
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 40rem) {
   .img-container {
     height: 25vh;
   }
