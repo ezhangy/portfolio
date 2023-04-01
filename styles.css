@@ -267,7 +267,16 @@ a {
 
 @media screen and (max-width: 65rem) {
   .project-section > * {
-    padding: 0 4rem;
+    padding: 0 1rem;
     max-width: 100%;
+  }
+
+  .project-section > ol {
+    padding: 0 2rem;
+  }
+
+
+  .img-and-text {
+    flex-direction: column;
   }
 }

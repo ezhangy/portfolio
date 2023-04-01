@@ -38,6 +38,7 @@
   height: 80vh;
   margin-bottom: 10vh;
   font-family: "Bitter", Georgia, 'Times New Roman', Times, serif;
+  padding: 0 1rem;
 }
 
 .intro-text-container h1 {
@@ -67,15 +68,19 @@
 
 @media screen and (max-width: 65rem) {
   #homepage {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .projects-list {
     grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    padding: 0
   }
 
   .projects {
-    padding: 0 2rem;
+    width: 100%;
+    padding: 0;
   }
 }

@@ -46,3 +46,9 @@
     width: 100%;
     height: 3px;
 }
+
+@media screen and (max-width: 65rem) {
+    .navbar {
+        padding: 1rem;
+    }
+}
