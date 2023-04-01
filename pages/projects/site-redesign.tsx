@@ -1,3 +1,4 @@
+import heroImage from "../../public/assets/project_thumbnails/redesign_long.png";
 import problemsImg from "../../public/assets/troop/usability_problems.svg";
 import desktopWf from "../../public/assets/troop/wireframes/desktop.svg";
 import tabletWf from "../../public/assets/troop/wireframes/tablet.svg";
@@ -32,7 +33,7 @@ const TroopRedesign = () => {
         <title>{headerInfo.title} | lizzy zhang</title>
       </Head>
       <main>
-        <ProjectBanner img="/assets/project_thumbnails/redesign_long.png" />
+        <ProjectBanner img={heroImage} />
         <div className="project-content">
           <HeaderSection headerInfo={headerInfo} />
           <div className="project-section">
