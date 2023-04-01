@@ -1,7 +1,7 @@
 .about {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   align-items: center;
   gap: 4rem;  
@@ -28,4 +28,12 @@
   object-fit: cover;
   border-radius: 10%;
   filter: drop-shadow(0.4rem 0.4rem var(--text-accent-color));
+}
+
+@media screen and (max-width: 50rem) {
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+  }
 }
