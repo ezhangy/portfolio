@@ -5,6 +5,7 @@ import albumImg from "../public/assets/project_thumbnails/album.png";
 import redesignImg from "../public/assets/project_thumbnails/redesign.png";
 import happinessImg from "../public/assets/project_thumbnails/happiness.png";
 import { StaticImageData } from "next/image";
+import Head from "next/head";
 
 interface ProjectItem {
   id: number;
@@ -52,35 +53,41 @@ const Projects = () => {
   ];
 
   return (
-    <div id={styles["homepage"]}>
-      <div className={styles["intro-text-container"]}>
-        <h1 id={styles["hello-text"]}>
-          hi there, i'm <b>lizzy zhang.</b>
-        </h1>
-        <p>
-          I'm an aspiring <b>front-end developer</b> passionate about creating
-          beautiful and effective tools.
-        </p>
-        <a id={styles["see-work-wrapper"]} href="#works">
-          works ↓
-        </a>
-      </div>
-
-      <div className={styles.projects}>
-        <div id="works" className={styles["projects-list"]}>
-          {project_data.map((project: ProjectItem) => (
-            <ProjectItem
-              key={project.id}
-              title={project.title}
-              thumbnail={project.img}
-              descr={project.descr}
-              link={project.link}
-              tags={project.tags}
-            />
-          ))}
+    <>
+      <Head>
+        <title>home | lizzy zhang</title>
+      </Head>
+      <main id={styles["homepage"]}>
+        <div className={styles["intro-text-container"]}>
+          <h1 id={styles["hello-text"]}>
+            hi there, i'm{" "}
+            <span className={styles["underline"]}>lizzy zhang</span>.
+          </h1>
+          <p>
+            I'm an aspiring front-end developer passionate about creating
+            beautiful and effective tools.
+          </p>
+          <a id={styles["see-work-wrapper"]} href="#works">
+            works ↓
+          </a>
         </div>
-      </div>
-    </div>
+
+        <div className={styles.projects}>
+          <div id="works" className={styles["projects-list"]}>
+            {project_data.map((project: ProjectItem) => (
+              <ProjectItem
+                key={project.id}
+                title={project.title}
+                thumbnail={project.img}
+                descr={project.descr}
+                link={project.link}
+                tags={project.tags}
+              />
+            ))}
+          </div>
+        </div>
+      </main>
+    </>
   );
 };
 

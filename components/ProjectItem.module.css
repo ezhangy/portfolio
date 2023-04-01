@@ -42,7 +42,7 @@
   box-shadow: 0.8rem 0.8rem var(--text-accent-color);
 }
 
-.item p {
+.item h3 {
   opacity: 80%;
   font-style: italic;
   color: var(--main-text-color)

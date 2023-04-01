@@ -6,7 +6,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar}>
       <div className={styles.test}>
         <Link id={styles.name} href={`/`}>
           lizzy zhang
@@ -26,7 +26,7 @@ const Navbar = () => {
           about
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

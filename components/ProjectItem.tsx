@@ -24,7 +24,7 @@ const ProjectItem = ({
           <Image src={thumbnail} alt="" />
         </div>
         <h2>{title}</h2>
-        <p>{descr}</p>
+        <h3>{descr}</h3>
         <ul className={styles["project-tags"]}>
           {tags.map((tagName: string) => (
             <li>{tagName}</li>

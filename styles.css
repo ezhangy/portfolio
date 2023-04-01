@@ -47,15 +47,15 @@ button {
 
 
 :root {
-  --main-bg-color: #f6d0b1;
-  --dark-bg-color: #fcbe8c;
-  --med-bg-color: #fbc49a;
+  --main-bg-color: #f6d8c0;
+  --dark-bg-color: #fdc699;
+  --med-bg-color: #fed5b6;
   --light-bg-color: #f8eee6;
-  --main-accent-color:#f97101;
-  --text-accent-color:#fa801c;
-  --dark-text-accent-color:#d76b14;
-  --link-color: #e47216;
-  --main-text-color: #292929;
+  --main-accent-color:#ff7708;
+  --text-accent-color:#ff7708;
+  --dark-text-accent-color:#8A440F;
+  --link-color: #ff790b;
+  --main-text-color: #323232;
 }
 
 body {
@@ -119,7 +119,7 @@ a {
 }
 
 .project-section > * {
-  padding: 0 1rem;
+  padding: 0 12rem;
 }
 
 
