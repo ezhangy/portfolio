@@ -1,31 +1,23 @@
-# Create React App
+# lizzyzhang.me
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+A statically built portfolio generated using Next.js. Live at [lizzyzhang.me](https://www.lizzyzhang.me/)!
 
-## Deploy Your Own
+## Getting Started
 
-Deploy your own Create React App project with Vercel.
+Install dependencies:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+`npm install`
 
-_Live Example: https://create-react-template.vercel.app/_
+Start Next.js in development mode. You can view the site in your browser at [http://localhost:3000](http://localhost:3000):
 
-## Available Scripts
+`npm run dev`
 
-In the project directory, you can run:
+## Production Usage
 
-### `npm start`
+Build the app for production to the `.next/static` folder:
 
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`npm run build`
 
-The page will reload when you make changes. You may also see any lint errors in the console.
+Start a Next.js production server:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+`npm run start`

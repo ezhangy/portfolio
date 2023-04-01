@@ -42,19 +42,20 @@ button {
 @font-face {
   font-family: "Bitter";
   src: local("Bitter"), 
-    url("./fonts/Bitter-VariableFont_wght.ttf") format("truetype")
+    url("./public/fonts/Bitter-VariableFont_wght.ttf") format("truetype")
 }
 
 
 :root {
-  --main-bg-color: #f6d0b1;
-  --dark-bg-color: #fcbe8c;
-  --med-bg-color: #fbc49a;
+  --main-bg-color: #f6d8c0;
+  --dark-bg-color: #fdc699;
+  --med-bg-color: #fed5b6;
   --light-bg-color: #f8eee6;
-  --main-accent-color:#f97101;
-  --text-accent-color:#fa801c;
-  --link-color: #e47216;
-  --main-text-color: #292929;
+  --main-accent-color:#ff7708;
+  --text-accent-color:#ff7708;
+  --dark-text-accent-color:#8A440F;
+  --link-color: #ff790b;
+  --main-text-color: #323232;
 }
 
 body {
@@ -107,20 +108,20 @@ a {
 .project-content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-.project-section h2, .project-section h3, .project-section p {
-  margin-block-start: 1em;
-}
-
-.project-content p:first-of-type {
-  margin-block-start: 0.5rem;
+  padding: 1rem 0;
 }
 
 .project-section {
-  padding: 2% 20%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem 0;
 }
+
+.project-section > * {
+  padding: 0 12rem;
+}
+
 
 .small-section-title {
   font-family: "Bitter", Georgia, 'Times New Roman', Times, serif;
@@ -163,7 +164,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 2% 0 0;
+  max-width: 100%;
+  padding: 2rem 4rem;
 }
 
 .text-block {
@@ -192,8 +194,6 @@ a {
 }
 
 .img-and-text {
-  margin-left: -12%;
-  margin-right: -12%;
   gap: 1.5rem;
 }
 
@@ -263,4 +263,20 @@ a {
 
 .simple-button:hover {
   color: #ff5900;
+}
+
+@media screen and (max-width: 65rem) {
+  .project-section > * {
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .project-section > ol {
+    padding: 0 2rem;
+  }
+
+
+  .img-and-text {
+    flex-direction: column;
+  }
 }
