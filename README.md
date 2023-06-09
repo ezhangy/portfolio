@@ -1,23 +1,38 @@
-# lizzyzhang.me
+# create-svelte
 
-A statically built portfolio generated using Next.js. Live at [lizzyzhang.me](https://www.lizzyzhang.me/)!
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Getting Started
+## Creating a project
 
-Install dependencies:
+If you're seeing this, you've probably already done this step. Congrats!
 
-`npm install`
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-Start Next.js in development mode. You can view the site in your browser at [http://localhost:3000](http://localhost:3000):
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-`npm run dev`
+## Developing
 
-## Production Usage
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Build the app for production to the `.next/static` folder:
+```bash
+npm run dev
 
-`npm run build`
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-Start a Next.js production server:
+## Building
 
-`npm run start`
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
