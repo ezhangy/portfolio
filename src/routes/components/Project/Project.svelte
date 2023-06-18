@@ -18,6 +18,8 @@
 <style>
     .project {
         display: flex;
+        justify-content: center;
         gap: 2rem;
+        padding-bottom: 3rem;
     }
 </style>

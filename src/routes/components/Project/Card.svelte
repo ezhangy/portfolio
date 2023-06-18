@@ -21,7 +21,7 @@
 
 <style>
     .card {
-        max-width: 50rem;
+        max-width: 60rem;
         padding: 0.75rem;
         background-color: var(--blue-medium);
         border-radius: 10px;
@@ -32,7 +32,7 @@
     }
 
     img.cover {
-        filter: saturate(90%);
+        filter: saturate(50%);
     }
 
     .card:hover {
