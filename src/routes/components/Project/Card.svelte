@@ -32,7 +32,7 @@
     }
 
     img.cover {
-        filter: saturate(50%);
+        filter: saturate(75%);
     }
 
     .card:hover {

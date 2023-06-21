@@ -18,7 +18,7 @@
 <style>
     .project {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         gap: 2rem;
         padding-bottom: 3rem;
     }

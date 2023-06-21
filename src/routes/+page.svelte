@@ -11,9 +11,9 @@
 
 <main>
 	<Section>
-		<h1>hi, i'm lizzy zhang</h1>
+		<h1>lizzy zhang</h1>
 		<p>
-			I'm passionate about creating tools that inform and empower the public. Currently, I'm building a site to explore lobbying data at the <a href="http://www.climatedevlab.brown.edu/">Brown Climate and Development Lab</a>.
+			Hello! I'm passionate about creating tools that inform and empower the public. Currently, I'm building a site to explore lobbying data at the <a href="http://www.climatedevlab.brown.edu/">Brown Climate and Development Lab</a>.
 		</p>
 	</Section>
 
