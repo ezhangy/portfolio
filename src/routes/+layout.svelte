@@ -4,10 +4,10 @@
     import { page } from "$app/stores";
     console.log($page.route.id)
 </script>
-<nav>
+<!-- <nav>
     <a href="/" class:active="{$page.route.id === "/"}">home</a>
     <a href="about">about</a>
-</nav>
+</nav> -->
 <slot />
 
 <style>
@@ -27,7 +27,7 @@
         text-decoration: none;
     }
 
-    a.active {
+    a.active, a:hover  {
         text-decoration: underline;
     }
 </style>

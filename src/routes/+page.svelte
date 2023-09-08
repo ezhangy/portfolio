@@ -2,18 +2,20 @@
 	import Card from './components/Project/Card.svelte';
 	import Section from './components/Section.svelte';
 	import thayerCover from '$lib/assets/thayer-street/cover.png';
-    import thayerMoving from  '$lib/assets/thayer-street/moving.gif'
+    import thayerMoving from  '$lib/assets/thayer-street/moving.mp4'
 	import pollCover from '$lib/assets/poll/cover.png';
-    import pollMoving from  '$lib/assets/poll/moving.gif'
+    import pollMoving from  '$lib/assets/poll/moving.mp4'
+	import happinessCover from '$lib/assets/happiness/cover.png';
+    import happinessMoving from  '$lib/assets/happiness/moving.mp4'
 
 	import Project from './components/Project/Project.svelte';
 </script>
 
 <main>
 	<Section>
-		<h1>lizzy zhang</h1>
-		<p>
-			Hello! I'm passionate about creating tools that inform and empower the public. Currently, I'm building a site to explore lobbying data at the <a href="http://www.climatedevlab.brown.edu/">Brown Climate and Development Lab</a>.
+		<h1 id="name">lizzy zhang</h1>
+		<p id="introduction">
+			I create tools that inform and empower the public. Currently, I'm building a data portal for state lobbying records at the <a href="http://www.climatedevlab.brown.edu/">Brown Climate and Development Lab</a>.
 		</p>
 	</Section>
 
@@ -24,8 +26,15 @@
 			alt={''}
 			href={"https://projects.browndailyherald.com/2023/03/05/thayer-street-history/"}
 		>
-			<h3>The Evolution of Thayer Street</h3>
-			<p>A description of my project</p>
+			<div class="project-heading">
+				<h2>The Evolution of Thayer Street</h2>
+				<p class="organization-name">The Brown Daily Herald</p>
+				<p class="project-detail"><b>Tools:</b> Svelte, SvelteKit</p>
+			</div>
+			
+			<p>
+				Exploring how the storefronts on a busy street in Providence, RI have changed over two decades.
+			</p>			
 		</Project>
 		<Project 
 			coverSrc={pollCover} 
@@ -33,38 +42,66 @@
 			alt={''}
 			href={"https://projects.browndailyherald.com/2023/03/06/poll/lifestyle/"}
 		>
-			<h3>Spring Poll Interactive Tool</h3>
-			<p>A description of my project</p>
+			<div class="project-description-wrapper">
+				<div class="project-heading">
+					<h2>Spring 2023 Poll</h2>
+					<p class="organization-name">The Brown Daily Herald</p>
+					<p class="project-detail"><b>Tools:</b> Eleventy</p>
+				</div>
+				<p>
+					Analyzing how students responded to The Herald's Spring 2023 Poll across different categories and demographics.
+				</p>
+			</div>
+		</Project> 
+		<Project 
+			coverSrc={happinessCover} 
+			movingPreviewSrc={happinessMoving}
+			alt={''}
+			href={"https://projects.browndailyherald.com/2023/03/06/poll/lifestyle/"}
+		>
+			<div class="project-heading">
+				<h2>Student Happy Places</h2>
+				<p class="organization-name">The Brown Daily Herald</p>
+				<p class="project-detail"><b>Tools:</b> jQuery, HTML/CSS</p>
+			</div>
+			<p>Learning about where students feel the happiest on and off campus.</p>
 		</Project>
 	</Section>
-	
-	
-	
-	
 </main>
 
 <style>
-
     h1, h2 {
         color: var(--indigo-base);
     }
 
 	h1 {
-		font-family: "Roboto Slab";
-		font-size: 2.5rem;
+		font-family: "Futura";
+		font-weight: 700;
+		font-size: 3.5rem;
+		letter-spacing: 0.025em;
 	}
 
 	h2 {
 		font-family: var(--font-sans-serif);
-		font-size: 1.5rem;
-		margin-block-end: 0.5em;
+		font-size: 1.75rem;
+		margin-block-end: 0;
+		color: var(--indigo-medium);
 	}
 
-    h3 {
-        font-family: var(--font-sans-serif);
-        font-size: 1.5rem;
-        color: var(--indigo-dark)
-    }
+	.project-heading {
+		padding-bottom: 1rem;
+	}
+
+	.organization-name {
+		font-style: italic;
+		font-weight: bold;
+		font-size: 1.25rem;
+		color: var(--indigo-dark);
+	}
+
+	.project-detail {
+		font-size: 1.25rem
+	}
 
 	p {
 		font-family: var(--font-sans-serif);
@@ -80,4 +117,24 @@
 	a {
 		color: inherit;
 	}
+
+	@media only screen and (max-width: 30rem) {
+		#name {
+			text-align: center;
+		}
+
+		#introduction {
+			max-width: 90%;
+			margin: auto;
+			padding-bottom: 2rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		.project-detail, .organization-name, p {
+			font-size: 1rem;
+		}
+    }
 </style>

@@ -11,13 +11,25 @@
 
 <style>
     section {
-        max-width: 70rem;
-        padding: 1rem 0;
+        width: 70rem;
+        max-width: 100%;
         padding: 2rem 0;
 		margin: auto;
     }
 
     section.wide {
         max-width: 95%;
+    }
+
+    @media only screen and (max-width: 75rem) {
+        section {
+            padding: 1rem 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 30rem) {
+        section {
+            padding: 0.5rem;
+        }
     }
 </style>
