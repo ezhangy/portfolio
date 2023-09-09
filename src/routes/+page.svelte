@@ -11,7 +11,7 @@
 </script>
 
 <main>
-	<section id="introduction-section">
+	<section aria-label="Introduction" id="introduction-section">
 		<div id="introduction-wrapper">
 			<h1 id="name">lizzy zhang</h1>
 			<p id="introduction-paragraph">
@@ -20,11 +20,12 @@
 		</div>
 	</section>
 		
-	<section id="works-section">
+	<section aria-label="Projects" id="works-section">
 		<Project 
 			coverSrc={thayerCover} 
 			movingPreviewSrc={thayerMoving}
-			alt={''}
+			videoTitle={"The Evolution of Thayer Street Demo"}
+			linkAriaLabel={"The Evolution of Thayer Street"}
 			href={"https://projects.browndailyherald.com/2023/03/05/thayer-street-history/"}
 		>
 			<div class="project-heading">
@@ -40,7 +41,8 @@
 		<Project 
 			coverSrc={pollCover} 
 			movingPreviewSrc={pollMoving}
-			alt={''}
+			videoTitle={"Spring 2023 Poll Demo Video"}
+			linkAriaLabel={"Spring 2023 Poll Interactive Tool"}
 			href={"https://projects.browndailyherald.com/2023/03/06/poll/lifestyle/"}
 		>
 			<div class="project-description-wrapper">
@@ -57,11 +59,12 @@
 		<Project 
 			coverSrc={happinessCover} 
 			movingPreviewSrc={happinessMoving}
-			alt={''}
-			href={"https://projects.browndailyherald.com/2023/03/06/poll/lifestyle/"}
+			linkAriaLabel={'Where are Students Happiest?'}
+			videoTitle={'Where are Students Happiest?'}
+			href={"https://projects.browndailyherald.com/2022/11/21/where-are-students-happiest/"}
 		>
 			<div class="project-heading">
-				<h2>Student Happy Places</h2>
+				<h2>Where are Students Happiest?</h2>
 				<p class="organization-name">The Brown Daily Herald</p>
 				<p class="project-detail"><b>Tools:</b> jQuery, HTML/CSS</p>
 			</div>
@@ -135,7 +138,7 @@
 	}
 
 	a {
-		color: inherit;
+		color: var(--indigo-medium)
 	}
 
 	@media only screen and (max-width: 70rem) {

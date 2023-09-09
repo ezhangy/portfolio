@@ -1,7 +1,8 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
     export let coverSrc: string;
-    export let alt: string;
+    export let linkAriaLabel: string;
+    export let videoTitle: string;
     export let movingPreviewSrc: string;
     export let href: string;
 
@@ -14,7 +15,7 @@
     on:mouseleave="{() => showImage = true}" 
     class="card"
 >
-    <a {href}>
+    <a {href} aria-label={linkAriaLabel}>
             <!-- {#if showImage} 
                 <img class="media cover" src={coverSrc} alt={alt}  transition:fade={{ duration: 300 }}/>        
             {/if} -->
@@ -26,6 +27,7 @@
                     e.currentTarget.pause(); 
                     e.currentTarget.currentTime = 0 
                 }}"
+                title={videoTitle}
                 class="media moving" 
                 poster="{coverSrc}"
                 loop 
