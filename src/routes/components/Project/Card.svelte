@@ -15,7 +15,6 @@
     class="card"
 >
     <a {href}>
-        <div class="media-wrapper"  >
             <!-- {#if showImage} 
                 <img class="media cover" src={coverSrc} alt={alt}  transition:fade={{ duration: 300 }}/>        
             {/if} -->
@@ -34,19 +33,16 @@
                 playsinline 
                 src={movingPreviewSrc}
             />
-        </div>
-
     </a>
 </div>
 
 
 <style>
     .card {
+        flex: 0 0 35rem;
         position: relative;
-        height: fit-content;
-        width: fit-content;
-        max-width: 100%;
-        margin: auto;
+        height: 27.5rem;
+        margin: 0;
         padding: 0.75rem;
         background-color: var(--blue-medium);
         border-radius: 10px;
@@ -62,13 +58,24 @@
     }
 
     .media {
+        height: 100%;
+        width: 100%;
         border-radius: 10px;
-        width: 48.5rem;
+        object-fit: cover;
     }
 
-    @media only screen and (max-width: 75rem) {
-        .media {
-            max-width: 100%; 
+    @media only screen and (max-width: 45rem) {
+        .card {
+            height: 65vw;
+        }
+    }
+
+    @media only screen and (max-width: 30rem) {
+        .card {
+            transition: none;
+            padding: 0.5rem;
+            box-shadow: none;
+            background-color: var(--blue-dark);
         }
     }
 </style>

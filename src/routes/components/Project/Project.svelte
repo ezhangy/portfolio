@@ -17,25 +17,33 @@
 
 <style>
     .project {
-        max-width: 80rem;
         margin: auto;
-        display: flex;
+        display: block;
         justify-content: start;
         gap: 2rem;
         padding-bottom: 3rem;
     }
 
-    @media only screen and (max-width: 75rem) {
+    .description {
+        padding: 1rem 0 0;
+    }
+
+    @media only screen and (max-width: 70rem) {
+		.project {
+            display: block;
+        }
+	} 
+
+    /* @media only screen and (max-width: 90rem) {
         .project {
             display: block;
             max-width: 100%;
-            width: 810px;
-            padding-bottom: 2%;
+            padding-bottom: 2rem;
         }
         
         .description {
             padding: 1rem 0.5rem;
             width: 100%;
         }
-    }
+    } */
 </style>
