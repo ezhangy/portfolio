@@ -8,6 +8,7 @@
     import happinessMoving from  '$lib/assets/happiness/moving.mp4'
 
 	import Project from './components/Project/Project.svelte';
+	import Background from './components/Background.svelte';
 </script>
 
 <main>
@@ -72,6 +73,8 @@
 		</Project>
 	</section>
 </main>
+
+<Background />
 
 <style>
 	main {

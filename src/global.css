@@ -6,7 +6,8 @@
 :root {
     --blue-base: #dde4ff;
     --blue-medium: #c3cffb;
-    --blue-dark: #A9B9FA;
+    --blue-dark: #a9b9fa;
+    --blue-dark-translucent: #0033ff33;
     --indigo-base: #573fac;
     --indigo-medium: #3c2a7b;
     --indigo-dark: #342b54;

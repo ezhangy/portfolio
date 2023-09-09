@@ -45,7 +45,7 @@
         padding: 0.75rem;
         background-color: var(--blue-medium);
         border-radius: 10px;
-        box-shadow: 10px 10px 0 var(--blue-dark);
+        box-shadow: 10px 10px 0 var(--blue-dark-translucent);
         transition-property: transform box-shadow;
         transition-duration: 300ms;
         transition-timing-function: ease-in-out;
@@ -53,7 +53,7 @@
 
     .card:hover {
         transform: translate(-10px, -10px);
-        box-shadow: 20px 20px 0 var(--blue-dark);
+        box-shadow: 20px 20px 0 var(--blue-dark-translucent);
     }
 
     .media {
