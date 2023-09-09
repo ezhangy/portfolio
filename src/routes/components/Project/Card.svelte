@@ -16,9 +16,6 @@
     class="card"
 >
     <a {href} aria-label={linkAriaLabel}>
-            <!-- {#if showImage} 
-                <img class="media cover" src={coverSrc} alt={alt}  transition:fade={{ duration: 300 }}/>        
-            {/if} -->
             <video 
                 on:mouseenter="{(e) => {
                      e.currentTarget.play()
@@ -74,10 +71,14 @@
 
     @media only screen and (max-width: 30rem) {
         .card {
-            transition: none;
             padding: 0.5rem;
             box-shadow: none;
             background-color: var(--blue-dark);
+        }
+
+        .card:hover {
+            transform: none;
+            box-shadow: none;
         }
     }
 </style>
