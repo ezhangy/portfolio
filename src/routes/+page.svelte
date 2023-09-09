@@ -24,7 +24,7 @@
 		<Project 
 			coverSrc={thayerCover} 
 			movingPreviewSrc={thayerMoving}
-			videoTitle={"The Evolution of Thayer Street Demo"}
+			videoTitle={"The Evolution of Thayer Street Demo Video"}
 			linkAriaLabel={"The Evolution of Thayer Street"}
 			href={"https://projects.browndailyherald.com/2023/03/05/thayer-street-history/"}
 		>
@@ -59,7 +59,7 @@
 		<Project 
 			coverSrc={happinessCover} 
 			movingPreviewSrc={happinessMoving}
-			linkAriaLabel={'Where are Students Happiest?'}
+			linkAriaLabel={'Where are Students Happiest? Demo Video'}
 			videoTitle={'Where are Students Happiest?'}
 			href={"https://projects.browndailyherald.com/2022/11/21/where-are-students-happiest/"}
 		>
