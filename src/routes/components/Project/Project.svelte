@@ -34,17 +34,4 @@
             display: block;
         }
 	} 
-
-    /* @media only screen and (max-width: 90rem) {
-        .project {
-            display: block;
-            max-width: 100%;
-            padding-bottom: 2rem;
-        }
-        
-        .description {
-            padding: 1rem 0.5rem;
-            width: 100%;
-        }
-    } */
 </style>
