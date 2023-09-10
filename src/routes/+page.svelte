@@ -74,7 +74,7 @@
 	</section>
 </main>
 
-<Background />
+<!-- <Background /> -->
 
 <style>
 	main {
