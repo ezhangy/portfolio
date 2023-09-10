@@ -57,7 +57,6 @@ $amount: 20;
       top: random(100) * 1%;
       left: random(100) * 1%;
       animation-duration: $animationDuration;
-      animation-delay: calc(random(($animationDuration + 10) * 10) / 5) * -1s;
       transform-origin: (random(90) - 40) * 1vw (random(60) - 20) * 1vh;
       $blurRadius: $particleSize * 0.4;
       $x: if(random() > 0.5, -1, 1);
