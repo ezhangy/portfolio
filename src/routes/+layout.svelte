@@ -1,7 +1,6 @@
 
 <script lang="ts">
     import '../global.css'
-    import { page } from "$app/stores";
 
     export const prerender = true;
 </script>
