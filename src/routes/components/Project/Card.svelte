@@ -4,6 +4,8 @@
     export let videoTitle: string;
     export let movingPreviewSrc: string;
     export let href: string;
+
+    const isTouchDevice = 'ontouchstart' in document.documentElement;
 </script>
 
 
@@ -13,11 +15,15 @@
     <a {href} aria-label={linkAriaLabel}>
             <video 
                 on:mouseenter="{(e) => {
-                     e.currentTarget.play()
+                    if (!isTouchDevice) {
+                        e.currentTarget.play()
+                    }
                 }}" 
                 on:mouseleave="{(e) => {
-                    e.currentTarget.pause(); 
-                    e.currentTarget.currentTime = 0 
+                    if (!isTouchDevice) {
+                        e.currentTarget.pause(); 
+                        e.currentTarget.currentTime = 0 
+                    }
                 }}"
                 title={videoTitle}
                 class="media moving" 
