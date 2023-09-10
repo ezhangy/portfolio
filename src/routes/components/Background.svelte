@@ -40,6 +40,8 @@ $amount: 20;
   height: $particleSize;
   border-radius: $particleSize;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   position: absolute;
   animation-name: move;
   animation-duration: $animationDuration;
