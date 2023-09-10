@@ -1,0 +1,23 @@
+:root {
+    --blue-base: #dde4ff;
+    --blue-medium: #899ce0;
+    --blue-dark: #a9b9fa;
+    --blue-dark-translucent: #0124a4ac;
+    --indigo-base: #3f46ac;
+    --indigo-medium: #23276b;
+    --indigo-dark: #2b3054;
+    --font-monospace: 'Roboto Slab' 'Liberation Mono', 'Lucida Console', 'Courier New', Courier, monospace;
+    --font-sans-serif: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --accent-color-1: #5a249e;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+body {
+    background-color: var(--blue-base);
+}
