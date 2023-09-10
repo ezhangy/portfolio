@@ -31,6 +31,7 @@
                 muted 
                 playsinline 
                 src={movingPreviewSrc}
+                preload="auto"
             />
     </a>
 </div>
