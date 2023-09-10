@@ -1,18 +1,13 @@
 <script lang="ts">
-    import { fade } from 'svelte/transition';
     export let coverSrc: string;
     export let linkAriaLabel: string;
     export let videoTitle: string;
     export let movingPreviewSrc: string;
     export let href: string;
-
-    let showImage: boolean = true;
 </script>
 
 
 <div 
-    on:mouseenter="{() => showImage = false}" 
-    on:mouseleave="{() => showImage = true}" 
     class="card"
 >
     <a {href} aria-label={linkAriaLabel}>
@@ -59,6 +54,7 @@
     }
 
     .media {
+        touch-action: none;
         height: 100%;
         width: 100%;
         border-radius: 10px;
