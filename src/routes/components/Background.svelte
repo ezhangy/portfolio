@@ -29,10 +29,10 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: #dde4ff,;
+        background: #dde4ff;
     }
 
-$particleSize:50vmin;
+$particleSize: 50vmin;
 $animationDuration: 90s;
 $amount: 20;
 .background span {
@@ -55,7 +55,7 @@ $amount: 20;
       top: random(100) * 1%;
       left: random(100) * 1%;
       animation-duration: $animationDuration;
-      animation-delay: random(($animationDuration + 10s) * 10) / 5 * -1s;
+      animation-delay: calc(random(($animationDuration + 10) * 10) / 5) * -1s;
       transform-origin: (random(90) - 40) * 1vw (random(60) - 20) * 1vh;
       $blurRadius: $particleSize * 0.4;
       $x: if(random() > 0.5, -1, 1);

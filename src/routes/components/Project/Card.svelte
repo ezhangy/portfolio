@@ -47,7 +47,8 @@
         background-color: var(--blue-medium);
         border-radius: 10px;
         box-shadow: 10px 10px 0 var(--blue-dark-translucent);
-        transition-property: transform box-shadow;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         transition-duration: 300ms;
         transition-timing-function: ease-in-out;
     }
