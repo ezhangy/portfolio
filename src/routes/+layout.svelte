@@ -11,6 +11,7 @@
 <slot />
 
 <style>
+
     nav {
         display: flex;
         justify-content: flex-end;

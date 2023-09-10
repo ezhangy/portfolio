@@ -84,18 +84,19 @@
 	}
 
     h1, h2 {
-		font-family: "Futura";
         color: var(--indigo-base);
     }
 
 	h1 {
+		font-family: Futura, sans-serif;
 		font-weight: 700;
 		letter-spacing: 0.025em;
 	}
 
 	h2 {
-		margin-block-end: 0;
 		font-family: var(--font-sans-serif);
+		margin-block-end: 0;
+
 		font-size: 1.45rem;
 		color: var(--indigo-medium);
 	}

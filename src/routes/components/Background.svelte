@@ -46,9 +46,8 @@ $amount: 20;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   $colors: (
-    #bf99d16c,
-    #a3abda84,
-    #92c6dc69
+    #98a7ffbc,
+    #92a7dc69
   );
   @for $i from 1 through $amount {
     &:nth-child(#{$i}) {
