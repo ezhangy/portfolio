@@ -2,12 +2,9 @@
 <script lang="ts">
     import '../global.css'
     import { page } from "$app/stores";
-    console.log($page.route.id)
+
+    export const prerender = true;
 </script>
-<!-- <nav>
-    <a href="/" class:active="{$page.route.id === "/"}">home</a>
-    <a href="about">about</a>
-</nav> -->
 <slot />
 
 <style>
