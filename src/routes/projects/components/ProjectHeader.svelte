@@ -12,4 +12,10 @@
        font-size: 1.125rem;
        font-style: italic;
     }  
+
+    @media only screen and (max-width: 30rem) {
+        #project-tools {
+            font-size: 1rem;
+        } 
+    }
 </style>

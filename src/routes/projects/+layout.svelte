@@ -10,7 +10,7 @@
         font-family: var(--font-sans-serif)
     }
 
-    nav {
+        nav {
         max-width: 68rem;
         margin: auto;
         padding: 4rem 1rem 0;
@@ -59,12 +59,9 @@
        color: var(--indigo-base);
     }
 
-  
-
     main :global(p) {
         color: black;
         margin-block-start: 1em;
-        margin-block-end: 1em;
     }
     main :global(h1) {
         font-size: 2.75rem;
@@ -73,7 +70,7 @@
 
     main :global(h2) {
         font-size: 1.75rem;
-        padding-top: 1em;
+        padding-top: 1.5em;
         color: var(--indigo-dark)
     }
 
@@ -86,7 +83,19 @@
         }
 
         main :global(h1) {
-            font-size: 2rem;
+            font-size: 2.25rem;
+        }
+
+        main :global(h2) {
+            font-size: 1.5rem;
+        }
+
+        main :global(p) {
+            font-size: 1.125rem;
+        }
+
+        main :global(ul), main :global(ol) {
+            padding-inline-start: 1.5rem;
         }
     }
 </style>
