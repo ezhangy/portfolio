@@ -15,10 +15,10 @@
         margin: auto;
         padding: 4rem 1rem 0;
         font-family: var(--font-sans-serif);
-        color: var(--indigo-base);
     }
 
     nav a {
+        color: var(--indigo-base);
         text-decoration: none;
         font-weight: bold;
         font-size: 1.25rem;
