@@ -1,13 +1,15 @@
 <script lang="ts">
-	import Card from './components/Project/Card.svelte';
+	import Card from './components/ProjectItem/Card.svelte';
 	import thayerCover from '$lib/assets/thayer-street/cover.png';
+	import cdlCover from '$lib/assets/how-do-they-lobby/cover.png';
+	import cdlMoving from '$lib/assets/how-do-they-lobby/graph.mp4';
     import thayerMoving from  '$lib/assets/thayer-street/moving.mp4'
 	import pollCover from '$lib/assets/poll/cover.png';
     import pollMoving from  '$lib/assets/poll/moving.mp4'
 	import happinessCover from '$lib/assets/happiness/cover.png';
     import happinessMoving from  '$lib/assets/happiness/moving.mp4'
 
-	import Project from './components/Project/Project.svelte';
+	import ProjectItem from './components/ProjectItem/ProjectItem.svelte';
 	import Background from './components/Background.svelte';
 </script>
 
@@ -22,7 +24,24 @@
 	</section>
 		
 	<section aria-label="Projects" id="works-section">
-		<Project 
+		<ProjectItem 
+			coverSrc={cdlCover} 
+			movingPreviewSrc={cdlMoving}
+			videoTitle={"'How Do They Lobby?' Demo Video"}
+			linkAriaLabel={"'How Do They Lobby?'' Project Page"}
+			href={"/projects/how-do-they-lobby"}
+		>
+			<div class="project-heading">
+				<h2>How Do They Lobby?</h2>
+				<p class="organization-name">Brown Climate and Development Lab</p>
+				<p class="project-detail"><b>Tools:</b> Svelte, SvelteKit, Supabase, PostgreSQL</p>
+			</div>
+			
+			<p>
+				Visualizing and searching a novel dataset of lobbying coalitions, interest groups, and bills in state legislatures.
+			</p>			
+		</ProjectItem>
+		<ProjectItem 
 			coverSrc={thayerCover} 
 			movingPreviewSrc={thayerMoving}
 			videoTitle={"The Evolution of Thayer Street Demo Video"}
@@ -38,8 +57,8 @@
 			<p>
 				Exploring how the storefronts on a busy street in Providence, RI have changed over two decades.
 			</p>			
-		</Project>
-		<Project 
+		</ProjectItem>
+		<ProjectItem 
 			coverSrc={pollCover} 
 			movingPreviewSrc={pollMoving}
 			videoTitle={"Spring 2023 Poll Demo Video"}
@@ -56,8 +75,8 @@
 					Analyzing how students responded to The Herald's Spring 2023 Poll across different categories and demographics.
 				</p>
 			</div>
-		</Project> 
-		<Project 
+		</ProjectItem> 
+		<ProjectItem 
 			coverSrc={happinessCover} 
 			movingPreviewSrc={happinessMoving}
 			linkAriaLabel={'Where are Students Happiest? Demo Video'}
@@ -70,7 +89,7 @@
 				<p class="project-detail"><b>Tools:</b> jQuery, HTML/CSS</p>
 			</div>
 			<p>Learning about where students feel the happiest on and off campus.</p>
-		</Project>
+		</ProjectItem>
 	</section>
 </main>
 
@@ -82,10 +101,6 @@
 		grid-template-columns: auto 20rem 5% 42.5rem auto;
 		padding: 6rem 0 2rem;
 	}
-
-    h1, h2 {
-        color: var(--indigo-base);
-    }
 
 	h1 {
 		font-family: Futura, sans-serif;
@@ -132,12 +147,6 @@
 		font-style: italic;
 		font-weight: bold;
 		font-size: 1rem;
-		color: var(--indigo-dark);
-	}
-
-	p {
-		font-family: var(--font-sans-serif);
-		font-size: 1.125rem;
 		color: var(--indigo-dark);
 	}
 
