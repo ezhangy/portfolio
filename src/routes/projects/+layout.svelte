@@ -74,6 +74,10 @@
         color: var(--indigo-dark)
     }
 
+    main :global(h2) + :global(p) {
+        margin-block-start: 0.25em;
+    }
+
     @media only screen and (max-width: 30rem) {
         nav {
             padding: 2rem 1rem 0;
@@ -87,7 +91,7 @@
         }
 
         main :global(h2) {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
 
         main :global(p) {
