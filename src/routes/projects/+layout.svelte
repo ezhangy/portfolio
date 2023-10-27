@@ -10,11 +10,12 @@
         font-family: var(--font-sans-serif)
     }
 
-        nav {
+    nav {
         max-width: 68rem;
         margin: auto;
         padding: 4rem 1rem 0;
-        font-family: var(--font-sans-serif)
+        font-family: var(--font-sans-serif);
+        color: var(--indigo-base);
     }
 
     nav a {
