@@ -77,8 +77,7 @@ link to detailed pages on a given bill/interest group. Highlights include:
   [Typesense's Search API](https://typesense.org/docs/0.24.1/api/search.html).
 - Building in **fuzzy searching** on certain columns using `pg_trgm`, PostgreSQL's
   trigram matching module.
-- Lots of **SQL query optimization** (with the help of `EXPLAIN ANALYZE`) by
-  building better indices and limiting I/O.
+- Lots of **SQL query optimization** by building better indices and limiting I/O.
 
 <!-- ## Technologies Used
 
