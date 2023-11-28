@@ -5,6 +5,12 @@
     import ProjectHeader from '../components/ProjectHeader.svelte';
 </script>
 
+<svelte:head>
+
+<title>How Do They Lobby?</title>
+<meta name="description" content="Visualizing and searching a novel dataset of lobbying coalitions, interest groups, and bills in state legislatures." />
+</svelte:head>
+
 <ProjectHeader
 title="How Do They Lobby?"
 tools={[

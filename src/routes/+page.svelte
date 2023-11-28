@@ -4,6 +4,8 @@
 	import cdlCover from '$lib/assets/how-do-they-lobby/cover.png';
 	import cdlMoving from '$lib/assets/how-do-they-lobby/graph.mp4';
     import thayerMoving from  '$lib/assets/thayer-street/moving.mp4'
+	import opmCover from '$lib/assets/open-meetings/cover.png';
+    import opmMoving from '$lib/assets/open-meetings/app-demo.mp4'
 	import pollCover from '$lib/assets/poll/cover.png';
     import pollMoving from  '$lib/assets/poll/moving.mp4'
 	import happinessCover from '$lib/assets/happiness/cover.png';
@@ -28,7 +30,7 @@
 			coverSrc={cdlCover} 
 			movingPreviewSrc={cdlMoving}
 			videoTitle={"'How Do They Lobby?' Demo Video"}
-			linkAriaLabel={"'How Do They Lobby?'' Project Page"}
+			linkAriaLabel={"'How Do They Lobby?' Project Page"}
 			href={"/projects/how-do-they-lobby"}
 		>
 			<div class="project-heading">
@@ -39,6 +41,23 @@
 			
 			<p>
 				Visualizing and searching a novel dataset of lobbying coalitions, interest groups, and bills in state legislatures.
+			</p>			
+		</ProjectItem>
+		<ProjectItem 
+			coverSrc={opmCover} 
+			movingPreviewSrc={opmMoving}
+			videoTitle={"'Rhode Island Open Meetings' Demo Video"}
+			linkAriaLabel={"'Rhode Island Open Meetings' Project Page"}
+			href={"/projects/ri-open-meetings"}
+		>
+			<div class="project-heading">
+				<h2>Rhode Island Open Meetings</h2>
+				<p class="organization-name">Final Project for CSCI0320: Introduction to Software Engineering</p>
+				<p class="project-detail"><b>Tools:</b> React, React Router, TypeScript, Typesense</p>
+			</div>
+			
+			<p>
+				Making public meeting data in Rhode Island more accessible.
 			</p>			
 		</ProjectItem>
 		<ProjectItem 

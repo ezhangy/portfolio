@@ -7,10 +7,10 @@
 <figure>
     <video 
         title={alt}
+        controls
         class="media moving" 
         loop 
         muted 
-        autoplay
         playsinline 
         src={src}
         preload="auto"

@@ -17,7 +17,7 @@
 <div 
     class="card"
 >
-    <a {href} aria-label={linkAriaLabel}>
+        <a {href} aria-label={linkAriaLabel}>
             <video 
                 on:mouseenter="{(e) => {
                     if (!isTouchDevice) {
@@ -39,17 +39,17 @@
                 src={movingPreviewSrc}
                 preload="auto"
             />
-    </a>
+    </a>  
 </div>
 
 
 <style>
     .card {
+        height: min-content;
         flex: 0 0 35rem;
         position: relative;
-        height: 27.5rem;
         margin: 0;
-        padding: 0.75rem;
+        padding: 0.5rem 0.75rem;
         background-color: var(--blue-medium);
         border-radius: 10px;
         box-shadow: 10px 10px 0 var(--blue-dark-translucent);
@@ -69,13 +69,19 @@
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
+        aspect-ratio: 16 / 10;
     }
 
-    @media only screen and (max-width: 45rem) {
+    .card a {
+        position: relative;
+        top: 0.25rem;
+    }
+
+    /* @media only screen and (max-width: 45rem) {
         .card {
             height: 65vw;
         }
-    }
+    } */
 
     @media only screen and (max-width: 30rem) {
         .card {
