@@ -46,7 +46,10 @@ The dataset consists of four main tables stored in a PostgreSQL server hosted on
 ## Exploring Lobbying Coalitions
 
 <Video 
-    alt=""
+    alt="A graph showing a network of interest groups coalitions connected by red and green edge. Hovering over a coalition or edge shows a tooltip
+    providing additional information. Then, the user clicks to zoom in on the 
+    coalition labeled 'Public Sector Unions', which shows a dynamic network of 
+    nodes representing individual interest groups. The user interacts with the graph, then clicks on a interest group, which redirect them to the interest group's page."
     src={graphVideo} 
     caption="A prototype of the graph page, showing the state-wide coalition graph
     for Wisconsin."
@@ -66,7 +69,8 @@ using SvelteKit, rather than from the database directly. I also implemented:
 ## Searching Specific Records
 
 <Video 
-    alt=""
+    alt="A search is performed for 'environmental league' on the client name column of the clients page, which brings up a table of search results, which are then filtered by state. The user clicks on a link in the client 
+    ID column of the search results, which brings them to the interest group page for the 'Massachusetts League of Environmental Voters Inc.'. At the bottom of the page, there is a table showing the positions taken by the interest group. The user clicks on a link in the Bill ID column for one of the positions, bringing them to the corresponding bill page."
     src={searchVideo} 
     caption="The interactions between the search page, interest group page, and
     bill page on a site prototype."
@@ -84,16 +88,3 @@ link to detailed pages on a given bill/interest group. Highlights include:
 - Building in **fuzzy searching** on certain columns using `pg_trgm`, PostgreSQL's
   trigram matching module.
 - Lots of **SQL query optimization** by building better indices and limiting I/O.
-
-<!-- ## Technologies Used
-
-On the front-end, I used:
-
-- Svelte and SvelteKit
-- Tailwind CSS
-- TypeORM
-
-On the back-end, I used:
-
-- Supabase (a open-source Firebase alternative), to host a PostgreSQL database
-- SvelteKit to create an internal REST API to retriei -->
